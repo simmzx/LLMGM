@@ -1,0 +1,281 @@
+{
+  "all_fragments": [
+    "[H]C1=C([H])C([H])=C([H])C([H])=C1",
+    "C=O",
+    "[H]O"
+  ],
+  "fragment_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+  ],
+  "detected_interactions": {
+    "hydrogen_bonds": 2,
+    "pi_stacking": 0,
+    "hydrophobic": 9,
+    "salt_bridges": 0
+  },
+  "critical_fragments": [
+    {
+      "rank": 1,
+      "fragment_smiles": "[H]C1=C([H])C([H])=C([H])C([H])=C1",
+      "score": 9,
+      "interaction_count": {
+        "hydrogen_bonds": 0,
+        "pi_stacking": 0,
+        "hydrophobic": 9,
+        "salt_bridges": 0
+      },
+      "rationale": "Rank 1: This fragment extensive hydrophobic contacts (9 residues). Critical for binding affinity and specificity."
+    },
+    {
+      "rank": 2,
+      "fragment_smiles": "C=O",
+      "score": 4,
+      "interaction_count": {
+        "hydrogen_bonds": 1,
+        "pi_stacking": 0,
+        "hydrophobic": 0,
+        "salt_bridges": 0
+      },
+      "rationale": "Rank 2: This fragment forms strong H-bonds with SER1:A. Important for binding stability."
+    },
+    {
+      "rank": 3,
+      "fragment_smiles": "[H]O",
+      "score": 3,
+      "interaction_count": {
+        "hydrogen_bonds": 1,
+        "pi_stacking": 0,
+        "hydrophobic": 0,
+        "salt_bridges": 0
+      },
+      "rationale": "Rank 3: This fragment forms H-bonds with SER1:A. Contributes to overall binding."
+    }
+  ],
+  "overall_assessment": "The ligand binds through 2 hydrogen bonds, 0 \u03c0-\u03c0 stacking interactions, and 9 hydrophobic contacts. The most critical fragment ([H]C1=C([H])C([H])=C([H])C([H])=C1) provides the majority of favorable interactions.",
+  "method": "Rule-based ranking (no LLM)",
+  "note": "This analysis uses actual NCI detection, not LLM speculation",
+  "fragment_coordinates": {
+    "[H]C1=C([H])C([H])=C([H])C([H])=C1": {
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "coordinates": [
+        [
+          11.8705,
+          10.9856,
+          9.4691
+        ],
+        [
+          10.6329,
+          11.2849,
+          10.0476
+        ],
+        [
+          10.0509,
+          10.3982,
+          10.9564
+        ],
+        [
+          10.7053,
+          9.2099,
+          11.2889
+        ],
+        [
+          11.9431,
+          8.9055,
+          10.7135
+        ],
+        [
+          12.5391,
+          9.7918,
+          9.7963
+        ],
+        [
+          12.3021,
+          11.6882,
+          8.7673
+        ],
+        [
+          10.1248,
+          12.2054,
+          9.7908
+        ],
+        [
+          9.0931,
+          10.6318,
+          11.4029
+        ],
+        [
+          10.2533,
+          8.5235,
+          11.9933
+        ],
+        [
+          12.432,
+          7.9786,
+          10.9861
+        ]
+      ],
+      "centroid": [
+        11.0861,
+        10.145763636363636,
+        10.473836363636366
+      ],
+      "num_atoms": 11
+    },
+    "C=O": {
+      "atom_indices": [
+        6,
+        7
+      ],
+      "coordinates": [
+        [
+          13.8482,
+          9.4765,
+          9.1835
+        ],
+        [
+          14.4491,
+          8.4072,
+          9.4753
+        ]
+      ],
+      "centroid": [
+        14.14865,
+        8.941849999999999,
+        9.3294
+      ],
+      "num_atoms": 2
+    },
+    "[H]O": {
+      "atom_indices": [
+        8,
+        14
+      ],
+      "coordinates": [
+        [
+          14.4298,
+          10.3596,
+          8.2772
+        ],
+        [
+          15.3258,
+          10.1534,
+          7.8518
+        ]
+      ],
+      "centroid": [
+        14.8778,
+        10.256499999999999,
+        8.0645
+      ],
+      "num_atoms": 2
+    }
+  },
+  "saved_files": {
+    "output_directory": "diffusion_input",
+    "full_ligand": "diffusion_input/ligand_full.sdf",
+    "all_fragments": [
+      {
+        "fragment_id": 1,
+        "smiles": "[H]C1=C([H])C([H])=C([H])C([H])=C1",
+        "sdf_file": "diffusion_input/fragment_1.sdf",
+        "num_atoms": 11,
+        "centroid": [
+          11.0861,
+          10.145763636363636,
+          10.473836363636366
+        ]
+      },
+      {
+        "fragment_id": 2,
+        "smiles": "C=O",
+        "sdf_file": "diffusion_input/fragment_2.sdf",
+        "num_atoms": 2,
+        "centroid": [
+          14.14865,
+          8.941849999999999,
+          9.3294
+        ]
+      },
+      {
+        "fragment_id": 3,
+        "smiles": "[H]O",
+        "sdf_file": "diffusion_input/fragment_3.sdf",
+        "num_atoms": 2,
+        "centroid": [
+          14.8778,
+          10.256499999999999,
+          8.0645
+        ]
+      }
+    ],
+    "critical_fragments": [
+      {
+        "rank": 1,
+        "smiles": "[H]C1=C([H])C([H])=C([H])C([H])=C1",
+        "sdf_file": "diffusion_input/critical_fragment_rank1.sdf",
+        "score": 9,
+        "num_atoms": 11,
+        "centroid": [
+          11.0861,
+          10.145763636363636,
+          10.473836363636366
+        ],
+        "rationale": "Rank 1: This fragment extensive hydrophobic contacts (9 residues). Critical for binding affinity and specificity."
+      },
+      {
+        "rank": 2,
+        "smiles": "C=O",
+        "sdf_file": "diffusion_input/critical_fragment_rank2.sdf",
+        "score": 4,
+        "num_atoms": 2,
+        "centroid": [
+          14.14865,
+          8.941849999999999,
+          9.3294
+        ],
+        "rationale": "Rank 2: This fragment forms strong H-bonds with SER1:A. Important for binding stability."
+      },
+      {
+        "rank": 3,
+        "smiles": "[H]O",
+        "sdf_file": "diffusion_input/critical_fragment_rank3.sdf",
+        "score": 3,
+        "num_atoms": 2,
+        "centroid": [
+          14.8778,
+          10.256499999999999,
+          8.0645
+        ],
+        "rationale": "Rank 3: This fragment forms H-bonds with SER1:A. Contributes to overall binding."
+      }
+    ],
+    "protein_pocket": "diffusion_input/pocket.pdb",
+    "coordinate_summary": "diffusion_input/coordinates.json"
+  }
+}
